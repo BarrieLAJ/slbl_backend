@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "Start_Date": {
+      "type": "date"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Items": {
+      "displayName": "Items",
+      "type": "component",
+      "repeatable": true,
+      "component": "event-items.items"
+    },
+    "End_Date": {
+      "type": "date"
+    },
+    "raffles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::raffle.raffle",
+      "mappedBy": "event"
+    },
+    "alias": {
+      "type": "string",
+      "unique": true,
+      "minLength": 2,
+      "maxLength": 2,
+      "regex": "[a-z]{2}"
+    }
+  }
+}

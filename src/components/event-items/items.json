@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_event_items_items",
+  "info": {
+    "displayName": "Items",
+    "icon": "gifts",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Title": {
+      "type": "string"
+    }
+  }
+}
