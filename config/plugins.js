@@ -1,5 +1,5 @@
 module.exports = {
-    "custom-api": {
-      enabled: true,
-    },
+    // "custom-api": {
+    //   enabled: true,
+    // },
   };

@@ -15,7 +15,6 @@
     "@strapi/plugin-users-permissions": "4.5.1",
     "@strapi/strapi": "4.5.1",
     "better-sqlite3": "7.4.6",
-    "strapi-plugin-custom-api": "^1.0.4",
     "twilio": "^3.83.3"
   },
   "author": {
